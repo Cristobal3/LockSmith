@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive week calendar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" type="text/css" href="/style.css">
+
+  
+</head>
+
+<body>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Monday</span>
+        <span class="short">Mon</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Tuesday</span>
+        <span class="short">Tue</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Wendsday</span>
+        <span class="short">We</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Thursday</span>
+        <span class="short">Thur</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Friday</span>
+        <span class="short">Fri</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long">Appointments</span>
+        <span class="short">Sat</span>
+      </th>
+      <th>
+        <span class="day"></span>
+        <span class="long"></span>
+        <span class="short">Sun</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="hour" rowspan="4"><span>8:00</span></td>
+      <% include ../partials/modal %>
+             
+           <!-- Trigger the modal with a button for Tues-->
+      
+           <% include ../partials/modal %>
+ 
+      
+        <!-- Modal for Wednesday-->
+        <% include ../partials/modal %>
+        <!-- Modal Thursday -->
+        <% include ../partials/modal %>
+        <!-- Modal Friday-->
+        <% include ../partials/modal %>
+      <% for (var i=0; i<3;i++) { %>
+      <tr>
+      <td> <%= list[i]['first_name'] + ' ' + list[i]['last_name']%></td>
+      <td> <%= 'start time: ' + list[i]['start_time'] + ' ' + 'end time: ' + list[i]['start_time']%></td>
+      </tr>
+      <% } %>
+    
+    <tr>
+      <td class="hour" rowspan="4"><span>9:00</span></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    
+    <tr>
+      <td class="hour" rowspan="4"><span>10:00</span></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>11:00</span></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>12:00</span></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>1:00</span></td>
+      
+        <!-- Modal for Monday -->
+        <% include ../partials/modal %>
+      
+        <!-- Modal for Tuesday-->
+        <% include ../partials/modal %>
+        <!-- Modal for Wednesday -->
+        <% include ../partials/modal %>
+        
+        <!-- Modal for Thursday -->
+        <% include ../partials/modal %>
+        
+        <!-- Modal for Friday -->
+        <% include ../partials/modal %>
+        
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+     
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+     
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>2:00</span></td>
+      <td></td>
+      <td></td>
+     
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>3:00</span></td>
+      <td></td>
+      
+      <td></td>
+    </tr>
+    <tr>
+
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>4:00</span></td>
+
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour" rowspan="4"><span>5:00</span></td>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+</body>
+
+</html>
